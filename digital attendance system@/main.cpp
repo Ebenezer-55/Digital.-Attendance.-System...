@@ -105,6 +105,13 @@ void saveStudents() {
 }
 
 void addStudent() {
+   void markAttendance() {
+    for(int i = 0; i < studentCount; i++) {
+        cout << "Mark attendance for " << students[i].name << endl;
+        cout << "P = Present, A = Absent, L = Late: ";
+        cin >> attendanceStatus[i];
+    }
+} 
     students[studentCount].registerStudent();
     studentCount++;
 }
@@ -173,3 +180,4 @@ int main() {
     return 0;
 
 }
+
